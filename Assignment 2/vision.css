@@ -1,0 +1,36 @@
+/* Adjustment of the font footer */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* For the content */
+.member {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border-bottom: 1px solid lightgrey;
+}
+
+/* Image of the content */
+.image {
+    flex: 1;
+    padding: 10px;
+    max-width: 50%;
+}
+
+/* Adjustment of the image */
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Adding text for the content*/
+.vision {
+    flex: 1;
+    padding: 10px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}

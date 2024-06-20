@@ -1,0 +1,353 @@
+/* Our introductory section that include navigator menu */
+.header {
+    padding: 5px;
+    height: 80px;
+    background-color: white;
+    color: white;
+    border-bottom: 1px solid lightgrey;
+    font-family: "Open Sans";
+    font-size: 18px;
+    text-align: right;
+    color: rgb(200, 37, 37);
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    z-index: 1000;
+    right: 5px;
+}
+
+/* To adjust text at the navigator menu */
+.topnav { 
+    /* for left and right navigation */
+    background-color: white;
+    overflow: hidden;
+    font-size: 13px;
+    font-family:  'open sans', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+    margin-left: 9em;
+}
+
+/* To adjust the text to right side */
+.topnav-right {
+    float: right;
+    color: red; 
+    font-size: 20px;
+    margin-top: 1px;
+    margin-right: 110px;
+    font-family: 'bauer bodoni roman';
+}
+
+/* .topnav .home{
+    float: left;
+    color: #808080;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'open sans', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+    margin-left: 9em;
+    margin-top: 20px; 
+}*/
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #808080;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'open sans', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+    margin-top: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: black;
+    font-family: 'open sans', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* to adjust the style of the link at navigatir menu (Home) */
+.topnav a.visited {
+    background-color: #333;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* .topnav b:hover {
+    background-color: #ddd; 
+    color: black;
+    font-family: 'open sans', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+}
+  
+.topnav b.active {
+    background-color: #04AA6D;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ 
+.topnav b.visited {
+      background-color: #333;
+      color: white;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
+
+/* To set a container for logo placement */
+.logo-container{
+    position: relative;
+    text-align: center;
+    padding: 80px 0 0;
+}
+
+/* Adjust the image of logo */
+.logo-container img{
+    width: 100%;
+    max-width: 100%;
+    height: 125px;
+}
+
+/* Represent the title of the content */
+.title p{
+    padding: 0 60px;
+    border-bottom: 1px solid lightgray;
+    height: 35px;
+    text-align: left;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(123, 123, 123);
+    margin-left: 60px;
+}
+
+/* Adjusting the image of the person */
+.title img{
+    position: relative;
+    top: 0;
+    padding: 0 130px;
+    padding-top: 0;
+    max-width: 70%;
+    max-height: 100%;
+
+} 
+
+/* Represent the person's name */
+.text-line-container {
+    position: relative;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+/* Add a line after name of the person */
+.text-line{
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    color: black;
+    padding: 0 130px;
+    padding-top: 80px;
+
+}
+
+/* Adjustment of the line */
+.text-line::after{
+    content: '';
+    position: absolute;
+    left: 320px;
+    height: 2px;
+    width: 100vw;
+    /*max-width: 100%;*/
+    top: 88%;
+    background-color: lightgray;
+    transform: translateY(-50%);
+}
+
+/* To set a container for all of the content placement */
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid lightgray;
+    padding: 5em;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+}
+
+/* To set a container for image placement (Home) */
+.img-containerBio{
+    padding: 3px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+/* Represent content of the personal information (Home) */
+.text-personalInfo {
+    font-family: 'open sans', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;
+    color: #666;
+    font-size: 15px;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* To set the container for the Interest and Achievement content */
+.grid-container {
+    display: grid;
+    gap: 80px 50px;
+    grid-template-columns: auto auto;
+    background-color: lightgrey;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 80%;
+}
+
+/* To set a container for image placement (Interest & Achievement) */
+.img-container{
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+
+/* Adjustment of the image for Interest & Achievement */
+.img-container img{
+    max-width: 70%;
+    max-height: 100%;
+}
+
+/* Adjustment of the image */
+img{
+    max-width: 70%;
+    max-height: 100%;
+}
+
+/* For content of the Interest */
+.text-exp{
+    font-family:  'open sans', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;;
+    font-size: 16px;
+    border: 2px solid rgb(224, 171, 171);
+    padding: 10px;
+    margin: 0px;
+    max-width: calc(100%-40px);
+    box-sizing: border-box;
+    position: absolute;
+    left: 83%;
+    top: 20%;
+    transform: translateY(-50%, -50%);
+    width: 80%;
+    text-align: center;
+}
+
+
+/* .text-centered{
+    color: #1f2a37;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0;
+    border: 0;
+    font-family: 'open sans', Helvetica, sans-serif;
+    vertical-align: baseline;
+    margin-left: 0.85em;
+} */
+
+/* .grid-itemInterest {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid lightgray;
+    padding: 5em;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+} */
+
+/* For content of the Achievement */
+.text-achievement{
+    font-family:  'open sans', 'HelveticaNeue', 'Helvetica Neue', 'Helvetica-Neue', Helvetica, Arial, sans-serif;;
+    font-size: 16px;
+    border: 2px solid rgb(224, 171, 171);
+    padding: 10px;
+    margin: 0px;
+    max-width: calc(100%-40px);
+    box-sizing: border-box;
+    position: absolute;
+    left: 83%;
+    top: 25%;
+    transform: translateY(-50%, -50%);
+    width: 80%;
+    text-align: center;
+}
+
+/* For footer purpose */
+
+.footer {
+    width: 100%; /* Set the width to 100% */
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+    background-color: #333; /* background color */
+    color: #fff; /* text color */
+    text-align: center; /* Center-align text */
+    margin-top: auto; /* Push footer to the bottom */
+    height: 200px; /* Set the height of the footer */
+}
+
+/* Styling for the first row of the footer */
+.first-row {
+    background-color: #222; /* Darker Blue */
+    color: #fff; /* Text color */
+    font-family: 'Open Sans', sans-serif; /* Use Open Sans font */
+    padding: 100px 0; /* Padding for top and bottom */
+    display: flex; /* Use flexbox for layout */
+    flex: 4; /* Occupy 4/5 of the available space */
+    height: 165px; /* Set the height of the first row */
+}
+
+/* Styling for the second row of the footer */
+.second-row {
+    background-color: #333; /* Lighter Black */
+    color: #fff; /* Text color */
+    padding: 0.2px; /* Padding */
+    display: flex; /* Use flexbox for layout */
+    flex: 1; /* Occupy 1/5 of the available space */
+    align-items: center; /* Center align items vertically */
+    justify-content: flex-start; /* Align content to the start */
+    font-family: 'Open Sans', sans-serif; /* Use Open Sans font */
+    font-size: 12px; /* Set font size */
+    text-align: left; /* Left-align text */
+    padding-left: 150px; /* Add left padding */
+    height: 55px; /* Set the height of the second row */
+}
+
+/* Styling for columns within the footer */
+.column {
+    flex: 1; /* Equal flex distribution */
+    padding: 10px 5px; /* Padding for top and bottom, reduced left and right */
+    padding-left: 0; /* Remove left padding */
+}
+
+/* Styling for the second column of the first row */
+.first-row .column:nth-child(2) {
+    text-align: left; /* Align contents of the second column to the left */
+}
+
+/* Styling for images within columns */
+.column img {
+    max-width: 100%; /* Set maximum width to 100% */
+    max-height: 150%; /* Set maximum height to 150% */
+    margin-top: -40px; /* Move image up */
+    margin-left: -100px; /* Move image left */
+}
+
+
